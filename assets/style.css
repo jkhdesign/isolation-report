@@ -1,0 +1,194 @@
+*, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: poynter-oldstyle-display-nar, serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 4em;
+}
+
+h2 {
+  font-family: ibm-plex-mono, sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  letter-spacing: 0.2em;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: ibm-plex-mono, sans-serif;
+  font-weight: 400;
+  font-size: 3em;
+  font-style: normal;
+  line-height: 1;
+}
+
+h4 {
+  font-family: ibm-plex-mono, sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  font-style: normal;
+  text-transform: uppercase;
+  padding: 1em 0;
+  border-top: 1px solid black;
+}
+
+a {
+  color: black;
+  transition: 0.2s;
+}
+
+a:hover {
+  opacity: 0.4;
+}
+
+#header {
+  font-size: 1em;
+  width: calc(100% - 6em);
+  background-color: white;
+  box-shadow: 0px 5px 40px 0px rgba(0,0,0,0.25);
+  border-radius: 0 0 1rem 1rem;
+  padding: 1.5em 3em;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  transition: 0.2s;
+}
+
+#header > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  font-size: 1em;
+  width: 30rem;
+}
+
+#menu {
+  cursor: pointer;
+}
+
+#wrapper {
+  width: 70vw;
+  margin: 14em auto;
+}
+
+#date-start {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid black;
+}
+
+#date-end {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 0.5em;
+  border-top: 1px solid black;
+}
+
+#nav {
+  font-size: 1em;
+  align-self: end;
+  justify-self: end;
+}
+
+#nav > a {
+  text-decoration: none;
+}
+
+#day {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 2em;
+  grid-row-gap: 1em;
+}
+
+#day > div {
+  padding-bottom: 3em;
+}
+
+#anxiety-txt {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+#anxiety-txt > h1 {
+  font-size: 20em;
+  line-height: 0.9;
+  font-family: poynter-oldstyle-display-nar, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#anxiety-txt > h4 {
+  border-top: none !important;
+}
+
+#anxiety-chart {
+  grid-area: 1 / 3 / 2 / 6;
+}
+
+#anxiety-chart > div {
+  margin-top: 10%;
+  height: 70%;
+  background-image: linear-gradient(180deg, #FF6B3D 0%, #055EB6 100%);
+  border-radius: 1rem;
+}
+
+#headline {
+  grid-area: 2 / 1 / 3 / 6;
+}
+
+#nasdaq {
+  grid-area: 3 / 1 / 4 / 4;
+}
+
+#up, #down {
+  font-size: 2rem;
+}
+
+#down {
+  color: #FF6B3D;
+}
+
+#weather {
+  grid-area: 4 / 1 / 5 / 4;
+}
+
+#weather-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+#weather-grid > #div1 { grid-area: 1 / 1 / 2 / 2; }
+#weather-grid > #div2 { grid-area: 1 / 2 / 2 / 3; }
+
+#obit {
+  grid-area: 3 / 4 / 5 / 6;
+}
+
+#other-news {
+  grid-area: 5 / 1 / 6 / 6;
+  margin-bottom: 2em;
+}
+
+#obit, #other-news {
+  font-size: 0.7em;
+}
+
+::selection {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.99);
+}
+
+@media only screen and (max-width: 900px) {
+  #date-start, #date-end, #day {
+    display: block;
+  }
+}
