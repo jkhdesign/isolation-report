@@ -7,6 +7,10 @@
   <title>Community Isolation Report</title>
   <link rel="stylesheet" href="../assets/style.css" type="text/css">
   <link rel="stylesheet" href="https://use.typekit.net/kja3igy.css">
+  <script>
+    var nextDay = "two.html";
+    var prevDay = "../index.html"
+   </script>
 </head>
 
 <body>
@@ -19,7 +23,7 @@
   <div id="wrapper">
     <div id="date-start">
       <h2>April 4, 2020</h2>
-      <h2 id="nav"><a href="#">Previous day</a> / <a href="#">Next day</a></h2>
+      <h2 class="nav"><a onclick="window.location.href = prevDay">Previous day</a> / <a onclick="window.location.href = nextDay">Next day</a></h2>
     </div>
     <div id="day">
       <div id="anxiety-txt">
@@ -56,7 +60,7 @@
     </div>
     <div id="date-end">
       <h2></h2>
-      <h2 id="nav"><a href="#">Previous day</a> / <a href="#">Next day</a></h2>
+      <h2 class="nav"><a onclick="window.location.href = prevDay">Previous day</a> / <a onclick="window.location.href = nextDay">Next day</a></h2>
     </div>
   </div>
   <script src="../assets/motion.js"></script>
