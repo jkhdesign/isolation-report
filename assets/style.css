@@ -138,7 +138,7 @@ li:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 6em;
+  margin-top: 7em;
 }
 
 #hero > h1 {
@@ -174,6 +174,10 @@ li:hover {
   border-bottom: 1px solid black;
 }
 
+#holiday {
+  font-size: 1rem;
+}
+
 #date-end {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -182,7 +186,7 @@ li:hover {
 }
 
 .nav {
-  font-size: 1em;
+  font-size: 1rem;
   align-self: end;
   justify-self: end;
 }
@@ -236,16 +240,31 @@ li:hover {
   grid-area: 3 / 1 / 4 / 4;
 }
 
-#up, #down {
-  font-size: 2rem;
+#up, #down, #closed {
+  font-size: 1.5rem;
+}
+
+#closed {
+  opacity: 0.5;
+  text-transform: uppercase;
 }
 
 #down {
   color: #FF6B3D;
 }
 
+#up {
+  color: #2cc144;
+}
+
+#up::before {
+  content: "\2191";
+  padding-right: 0.25em;
+}
+
 #down::before {
   content: "\2193"
+  padding-right: 0.25em;
 }
 
 #weather {
@@ -258,7 +277,10 @@ li:hover {
 }
 
 #weather-grid > #div1 { grid-area: 1 / 1 / 2 / 2; }
-#weather-grid > #div2 { grid-area: 1 / 2 / 2 / 3; }
+#weather-grid > #div2 {
+  grid-area: 1 / 2 / 2 / 3;
+  align-self: center;
+}
 
 #obit {
   grid-area: 3 / 4 / 5 / 6;
@@ -293,7 +315,7 @@ li:hover {
 #twitter-icon {
   width: 1em;
   padding-right: 0.5em;
-  transform: translateY(5px);
+  transform: translateY(3px);
 }
 
 ::selection {
