@@ -12,3 +12,14 @@ function scrollFunction() {
     document.getElementById("logo").style.width = "30rem";
   }
 }
+
+// NAV
+
+function nav() {
+  var navLinks = document.getElementById("nav-links");
+  if (navLinks.style.right === "0px") {
+    navLinks.style.right = "-30%";
+  } else {
+    navLinks.style.right = "0px";
+  }
+}

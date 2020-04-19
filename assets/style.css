@@ -51,7 +51,7 @@ a {
   transition: 0.2s;
 }
 
-a:hover {
+a:hover, #menu:hover {
   opacity: 0.4;
 }
 
@@ -68,7 +68,7 @@ a:hover {
   transition: 0.2s;
 }
 
-#header > div {
+#header > #main-links {
   display: flex;
   justify-content: space-between;
 }
@@ -80,16 +80,65 @@ a:hover {
 
 #menu {
   cursor: pointer;
+  transition: 0.2s;
+}
+
+#nav-links {
+  font-family: ibm-plex-mono, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  height: 100vh;
+  transition: right 0.5s ease;
+  width: 30%;
+  position: fixed;
+  top: 0;
+  right: -30%;
+  background-color: white;
+  box-shadow: 0px 5px 40px 0px rgba(0,0,0,0.25);
+  z-index: 4;
+}
+
+#nav-links > div {
+  margin-top: 8em;
+  margin-left: 2em;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  padding-bottom: 0.5em;
+}
+
+li {
+  padding-left: 1em;
+  text-indent: -1em;
+  transition: 0.2s;
+}
+
+li > a {
+  text-decoration: none;
+}
+
+li:before {
+  content: "—";
+  padding-right: 5px;
+}
+
+li:hover {
+  text-indent: 0;
 }
 
 #hero {
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   background-image: linear-gradient(180deg, #FF6B3D 0%, #0873DC 100%);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 6em;
 }
 
 #hero > h1 {
@@ -104,6 +153,7 @@ a:hover {
   position: absolute;
   right: 5em;
   bottom: 5em;
+  z-index: 3;
 }
 
 #wrapper {
@@ -149,7 +199,7 @@ a:hover {
 }
 
 #day > div {
-  padding-bottom: 3em;
+  padding-bottom: 2em;
 }
 
 #anxiety-txt {
@@ -157,7 +207,7 @@ a:hover {
 }
 
 #anxiety-txt > h1 {
-  font-size: 20em;
+  font-size: 20vw;
   line-height: 0.9;
   font-family: poynter-oldstyle-display-nar, serif;
   font-weight: 400;
@@ -170,13 +220,12 @@ a:hover {
 
 #anxiety-chart {
   grid-area: 1 / 3 / 2 / 6;
+  border-radius: 1em;
+  align-self: end;
 }
 
-#anxiety-chart > div {
-  margin-top: 10%;
-  height: 70%;
-  background-image: linear-gradient(180deg, #FF6B3D 0%, #0873DC 100%);
-  border-radius: 1rem;
+#anxiety-chart > img {
+  width: 100%;
 }
 
 #headline {
@@ -195,6 +244,10 @@ a:hover {
   color: #FF6B3D;
 }
 
+#down::before {
+  content: "\2193"
+}
+
 #weather {
   grid-area: 4 / 1 / 5 / 4;
 }
@@ -209,15 +262,38 @@ a:hover {
 
 #obit {
   grid-area: 3 / 4 / 5 / 6;
+  font-size: 0.7rem;
 }
 
-#other-news {
+#obit > img {
+  width: 40%;
+  border-radius: 100%;
+  padding-bottom: 1em;
+}
+
+#twitter {
   grid-area: 5 / 1 / 6 / 6;
   margin-bottom: 2em;
 }
 
-#obit, #other-news {
-  font-size: 0.7em;
+#tweet {
+  font-family: poynter-oldstyle-display-nar, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3em;
+  text-indent: -0.3em;
+  padding-bottom: 1rem;
+}
+
+#twitter > h2 {
+  font-size: 1.3em;
+  text-align: right;
+}
+
+#twitter-icon {
+  width: 1em;
+  padding-right: 0.5em;
+  transform: translateY(5px);
 }
 
 ::selection {
@@ -234,5 +310,9 @@ a:hover {
 @media only screen and (max-width: 900px) {
   #date-start, #date-end, #day {
     display: block;
+  }
+
+  #anxiety-txt > h1 {
+    font-size: 70vw;
   }
 }
