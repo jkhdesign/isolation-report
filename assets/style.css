@@ -31,7 +31,7 @@ h3 {
   font-weight: 400;
   font-size: 3em;
   font-style: normal;
-  line-height: 1;
+  line-height: 1.1;
 }
 
 h4 {
@@ -53,6 +53,13 @@ a {
 
 a:hover, #menu:hover {
   opacity: 0.4;
+}
+
+.mono {
+  font-family: ibm-plex-mono, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  padding: 0 0.25em;
 }
 
 #header {
@@ -122,7 +129,8 @@ li > a {
 }
 
 li:before {
-  content: "—";
+  content: url(img/bullet.svg);
+  width: 0.25em;
   padding-right: 5px;
 }
 
@@ -152,7 +160,7 @@ li:hover {
   width: 12em;
   position: absolute;
   right: 5em;
-  bottom: 5em;
+  bottom: 4em;
   z-index: 3;
 }
 
@@ -195,6 +203,18 @@ li:hover {
   text-decoration: none;
 }
 
+h2.nav::before {
+  content: "\2190";
+  padding-right: 0.3em;
+  font-size: 1.3em;
+}
+
+h2.nav::after {
+  content: "\2192";
+  padding-left: 0.3em;
+  font-size: 1.3em;
+}
+
 #day {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -224,7 +244,6 @@ li:hover {
 
 #anxiety-chart {
   grid-area: 1 / 3 / 2 / 6;
-  border-radius: 1em;
   align-self: end;
 }
 
@@ -240,11 +259,11 @@ li:hover {
   grid-area: 3 / 1 / 4 / 4;
 }
 
-#up, #down, #closed {
+#up, #down, #closed, #weather-desc {
   font-size: 1.5rem;
 }
 
-#closed {
+#closed, #weather-desc {
   opacity: 0.5;
   text-transform: uppercase;
 }
@@ -276,10 +295,18 @@ li:hover {
   grid-template-columns: 1fr 3fr;
 }
 
-#weather-grid > #div1 { grid-area: 1 / 1 / 2 / 2; }
+#weather-grid > #div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  padding: 1em 1em 0 0;
+}
+
 #weather-grid > #div2 {
   grid-area: 1 / 2 / 2 / 3;
   align-self: center;
+}
+
+#weather-desc {
+  padding-top: 0.25em;
 }
 
 #obit {
@@ -316,6 +343,17 @@ li:hover {
   width: 1em;
   padding-right: 0.5em;
   transform: translateY(3px);
+}
+
+#footer {
+  font-family: ibm-plex-mono, sans-serif;
+  font-weight: 400;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  padding: 1em 0;
+  text-align: center;
+  width: 100%;
+  background-color: #ebebeb;
 }
 
 ::selection {

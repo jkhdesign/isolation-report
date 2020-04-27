@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="319px" height="125px" viewBox="0 0 319 125" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
-    <title>chart-1</title>
+    <title>chart-5</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <linearGradient x1="49.9023437%" y1="99.9023437%" x2="49.9023437%" y2="0.09765625%" id="linearGradient-1">
@@ -12,12 +12,16 @@
             <stop stop-color="#FFFFFF" offset="0%"></stop>
             <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
         </linearGradient>
+        <linearGradient x1="99.8046875%" y1="50%" x2="-4.4408921e-14%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
     </defs>
-    <g id="chart-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="chart-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <rect fill="#FFFFFF" x="0" y="0" width="319" height="125"></rect>
-        <polygon id="chart" fill="url(#linearGradient-1)" points="302 31 349.5 19 397 25.0515373 397 104 302 104"></polygon>
-        <rect id="right-bearing" fill="url(#linearGradient-2)" x="305" y="0" width="14" height="105"></rect>
-        <rect id="left-bearing" fill="url(#linearGradient-2)" transform="translate(51.000000, 52.500000) scale(-1, 1) translate(-51.000000, -52.500000) " x="44" y="0" width="14" height="105"></rect>
+        <polygon id="chart" fill="url(#linearGradient-1)" points="44.5 19.5 55.5 31 179 31 302 67.5 343.017578 43.5 343.017578 104 44.5 104"></polygon>
+        <rect id="right-bearing" fill="url(#linearGradient-2)" x="281" y="0" width="38" height="105"></rect>
+        <rect id="left-bearing" fill="url(#linearGradient-3)" transform="translate(60.500000, 52.500000) scale(-1, 1) translate(-60.500000, -52.500000) " x="44" y="0" width="33" height="105"></rect>
         <g id="Group" transform="translate(1.000000, 0.000000)">
             <g id="chart-bg">
                 <g id="Group-2" transform="translate(33.000000, 6.000000)" opacity="0.5" stroke="#000000" stroke-linecap="square" stroke-width="0.5">
@@ -50,6 +54,8 @@
                 <tspan x="289" y="119">TODAY</tspan>
             </text>
         </g>
-        <circle id="Oval" fill="#000000" cx="302" cy="31" r="2"></circle>
+        <circle id="Oval" fill="#000000" cx="55.5" cy="31" r="2"></circle>
+        <circle id="Oval" fill="#000000" cx="179" cy="31" r="2"></circle>
+        <circle id="Oval-Copy" fill="#000000" cx="302" cy="67" r="2"></circle>
     </g>
 </svg>
