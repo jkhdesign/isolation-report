@@ -23,3 +23,30 @@ function nav() {
     navLinks.style.right = "0px";
   }
 }
+
+// PAGE FADE-IN
+
+setTimeout(function(){
+  function fadeIn() {
+    document.getElementById("wrapper").style.opacity = 1;
+    document.getElementById("hero").style.opacity = 1;
+  }
+  return fadeIn();
+}, 10);
+
+//countUp
+
+window.onload = function() {
+  var options = {
+    useEasing: true,
+    useGrouping: true,
+    separator: ',',
+    decimal: '.',
+  };
+  var demo = new CountUp('anxietyLevel', 0, anxietyLevel, 1, 2, options);
+  if (!demo.error) {
+    demo.start();
+  } else {
+    console.error(demo.error);
+  }
+};

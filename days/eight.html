@@ -11,7 +11,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
   <script>
     var nextDay = "nine.html";
-    var prevDay = "seven.html"
+    var prevDay = "seven.html";
+    var anxietyLevel = 2.9;
    </script>
 </head>
 
@@ -29,21 +30,21 @@
         <li><a href="../index.html">Introduction</a></li>
       </ul>
       <ul>
-        <li><a href="days/one.html">Day 01 (April 04)</a></li>
-        <li><a href="days/two.html">Day 02 (April 05)</a></li>
-        <li><a href="days/three.html">Day 03 (April 06)</a></li>
-        <li><a href="days/four.html">Day 04 (April 07)</a></li>
-        <li><a href="days/five.html">Day 05 (April 08)</a></li>
-        <li><a href="days/six.html">Day 06 (April 09)</a></li>
-        <li><a href="days/seven.html">Day 07 (April 10)</a></li>
-        <li><a href="days/eight.html">Day 08 (April 11)</a></li>
-        <li><a href="days/nine.html">Day 09 (April 12)</a></li>
-        <li><a href="days/ten.html">Day 10 (April 13)</a></li>
-        <li><a href="days/eleven.html">Day 11 (April 14)</a></li>
-        <li><a href="days/twelve.html">Day 12 (April 15)</a></li>
-        <li><a href="days/thirteen.html">Day 13 (April 16)</a></li>
-        <li><a href="days/fourteen.html">Day 14 (April 17)</a></li>
-        <li><a href="days/fifteen.html">Day 15 (April 18)</a></li>
+        <li><a href="one.html">Day 01 (April 04)</a></li>
+        <li><a href="two.html">Day 02 (April 05)</a></li>
+        <li><a href="three.html">Day 03 (April 06)</a></li>
+        <li><a href="four.html">Day 04 (April 07)</a></li>
+        <li><a href="five.html">Day 05 (April 08)</a></li>
+        <li><a href="six.html">Day 06 (April 09)</a></li>
+        <li><a href="seven.html">Day 07 (April 10)</a></li>
+        <li><a href="eight.html">Day 08 (April 11)</a></li>
+        <li><a href="nine.html">Day 09 (April 12)</a></li>
+        <li><a href="ten.html">Day 10 (April 13)</a></li>
+        <li><a href="eleven.html">Day 11 (April 14)</a></li>
+        <li><a href="twelve.html">Day 12 (April 15)</a></li>
+        <li><a href="thirteen.html">Day 13 (April 16)</a></li>
+        <li><a href="fourteen.html">Day 14 (April 17)</a></li>
+        <li><a href="fifteen.html">Day 15 (April 18)</a></li>
       </ul>
       <ul>
         <li><a href="../conclusion.html">Conclusion</a></li>
@@ -58,7 +59,7 @@
     <div id="day">
       <div id="anxiety-txt">
         <h4>Average anxiety level:</h4>
-        <h1 id="anxietyLevel">2.9</h1>
+        <h1 id="anxietyLevel">0.0</h1>
       </div>
       <div id="anxiety-chart">
         <img src="../assets/img/charts/chart-8.svg"/>
@@ -101,6 +102,11 @@
     Made with <3 by <a href="https://www.jkh.design/" target="_blank">jkh.design</a>
   </div>
   <script src="../assets/motion.js"></script>
+  <script src="../assets/countUp.js"></script>
+  <svg id="fader"></svg>
+  <script>
+    fadeIn();
+  </script>
 </body>
 
 </html>
